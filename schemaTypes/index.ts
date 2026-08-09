@@ -1,5 +1,5 @@
 import collection from "./documents/collection";
-import artwork from "./objects/artwork";
+import artwork from "./documents/artwork";
 import contact from "./objects/contact";
 import education from "./objects/education";
 import exhibition from "./objects/exhibition";

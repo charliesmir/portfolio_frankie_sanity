@@ -17,7 +17,7 @@ export default defineType({
     {
       name: "artworks",
       type: "array",
-      of: [{type: "artwork"}],
+      of:[{ type: "reference", to: [{type: "artwork"}] }],
       validation: (rule) => rule.required(),
     },
   ],

@@ -20,6 +20,14 @@ export default defineType({
       of:[{ type: "reference", to: [{type: "artwork"}] }],
       validation: (rule) => rule.required(),
     },
+    {
+      name: "slug",
+      type: "slug",
+      options: {
+        source: "name",
+      },
+      validation: (rule) => rule.required(),
+    },
   ],
   preview: {
     select: {
@@ -27,4 +35,5 @@ export default defineType({
       media: "artworks.0.image",
     },
   },
+  
 }); 
